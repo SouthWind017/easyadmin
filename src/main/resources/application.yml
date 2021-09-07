@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.114.172.252:3306/easyadmin?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: easyadmin
+    password: 3Lw2sKCZthtA3Ffx
+
+  thymeleaf:
+    cache: false
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:mapper/project/*Mapper.xml
+  type-aliases-package: com.easyadmin.project.entity
+logging:
+  level:
+    com.easyadmin.project.mapper: trace
